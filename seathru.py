@@ -524,7 +524,7 @@ def run_pipeline(img, depths, args):
         fig.add_subplot(2, 3, 6)
         plt.imshow(recovered)
         plt.title('Recovered Image')
-        plt.tight_layout(True)
+        plt.tight_layout()
         plt.savefig('components.png')
         plt.show()
 
