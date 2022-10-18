@@ -1,7 +1,8 @@
 #!/bin/bash
 
 python  seathru.py \
-    --image '/home/khleeloo/code/uwh_project/sea-thru/T_S04859.jpg'  \
-    --depth-map '/home/khleeloo/code/uwh_project/sea-thru/depthT_S04859.jpg' --output "output.png"
+    --image '/home/khleeloo/code/sea-thru/Raw/LFT_3374.NEF'  \
+    --depth-map '/home/khleeloo/code/sea-thru/depthMaps/depthLFT_3374.tif' --output "output_3374.png" \
+    --output-graphs --monodepth
 
 

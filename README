@@ -1,3 +1,7 @@
+The original sea-thru code from https://github.com/hainh/sea-thru
+
+The baseline images and depth estimations come from http://csms.haifa.ac.il/profiles/tTreibitz/datasets/sea_thru/index.html
+
 Bibliography:
 
 1. Sea-thru: A Method For Removing Water From Underwater Images
