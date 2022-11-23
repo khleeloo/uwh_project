@@ -1,8 +1,28 @@
+UNDERWATER IMAGE CORRECTION
+
+
 Parametric methods:
 
 Sea-thru
 
 Data preprocessing  
+
+
+The original sea-thru code from https://github.com/hainh/sea-thru
+
+@article{seathru,
+author = {Akkaynak, Derya and Treibitz, Tali},
+year = {2019},
+month = {04},
+title = {Sea-thru: A Method For Removing Water From Underwater Images},
+journal = {Proceedings / CVPR, IEEE Computer Society Conference on Computer Vision and Pattern Recognition. IEEE Computer Society Conference on Computer Vision and Pattern Recognition}
+}
+
+The baseline images and depth estimations come from http://csms.haifa.ac.il/profiles/tTreibitz/datasets/sea_thru/index.html
+
+
+
+
 
 
 
@@ -19,24 +39,3 @@ Diffusion Model
 
 
 
-The original sea-thru code from https://github.com/hainh/sea-thru
-
-The baseline images and depth estimations come from http://csms.haifa.ac.il/profiles/tTreibitz/datasets/sea_thru/index.html
-
-Bibliography:
-
-1. Sea-thru: A Method For Removing Water From Underwater Images
-
-2. True Color Correction of Autonomous Underwater Vehicle Imagery
-
-3. Depth Prediction Without the Sensors: Leveraging Structure for Unsupervised Learning from Monocular Videos
-
-4. Underwater Depth Estimation for Spherical Images
-
-5. Exploring the Seafloor with Underwater Robots
-
-6. Unsupervised Single Image Underwater Depth Estimation
-
-7. Depth estimation for underwater images from single view image
-
-8. Underwater image enhancement based on DCP and depth transmission map
