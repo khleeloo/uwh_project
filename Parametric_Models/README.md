@@ -14,9 +14,10 @@ The code requires MATLAB, and was tested on windows.
    - Download the toolbox from `https://github.com/pdollar/toolbox` into **"utils/toolbox/"**.
    - Download the toolbox from `https://github.com/pdollar/edges` into **"utils/edges/"**.
 
-2. Convert the **.NEF** image files to **.jpg** image files using `NEFtoJPG.py`
-3. Put all the processed image into **"images/input/"** folder.
-4. Run the file `main_underwater_restoration.m` 
+2. Put the **.TIF** image files on the **"images/Raw_TIF/"**.
+2. Convert the **.TIF** image files to **.jpg** image files using `TIFtoJPG.py`
+3. All the processed image are in the **"images/input/"** folder.
+4. Run the file `main_underwater_restoration.m`
 5. Results
    - The generated depth maps are stored in the **"image/output_depthmap/"** folder
    - The generated restored images are stored in the **"image/output_restored/"** folder
