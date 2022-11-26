@@ -6,6 +6,8 @@ Author: liuhh02 https://machinelearningtutorials.weebly.com/
 
 from PIL import Image
 import numpy as np
+from os import listdir
+
 
 # # name of your image file
 # filename = '/home/rita/uwh_project/justin/datasets/SQUID_original/image_set_01/LFT_3875resizedUndistort.tif'
@@ -138,6 +140,18 @@ class Preprocess():
             image.save(img_path+'/'+ new_file+'.png')
 
 
+    def resize(self,path):
+     
+        for item in  listdir( path ):
+            if os.path.isfile(path+item):
+                img = Image.open(path+item)
+                f, e = os.path.splitext(path+item)
+                img = img.resize((256,256), Image.ANTIALIAS)
+                img.save(f + '.jpeg') 
+    
+
+
+
 
 
         
@@ -147,9 +161,6 @@ scale_images.py
 Function to scale any image to the pixel values of [-1, 1] for GAN input.
 Author: liuhh02 https://machinelearningtutorials.weebly.com/
 """
-from PIL import Image
-import numpy as np
-from os import listdir
 
 #
 
@@ -158,13 +169,17 @@ def main():
     # folderA = 'FolderA'
     folderA = sys.argv[0]
     # folderA='Output_from_Seathru'
-    folderB = sys.argv[1]
-    dest_path = sys.argv[2]
+    # folderB = sys.argv[1]
+    # dest_path = sys.argv[2]
     pr=Preprocess()
-    if len(sys.argv)>2:
-        pr.allign_stereo(folderA,folderB,dest_path)
-    else:
-        pr.change_format(folderA)
+    # if len(sys.argv)>2:
+    #     pr.allign_stereo(folderA,folderB,dest_path)
+    # else:
+    #     pr.change_format(folderA)
+    pr.resize( folderA )
+    
+
+
     
     
     # define paths for translation from domain A (images in folderA) -> domain B (images in folderB)

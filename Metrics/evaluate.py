@@ -30,7 +30,7 @@ def rmetrics(a,b):
     psnr = 10*math.log10(1/mse)
 
     #ssim
-    ssim = structural_similarity(a,b,channel_axis=3)
+    ssim = structural_similarity(a,b, channel_axis=-1)
 
     return psnr, ssim
 
@@ -234,7 +234,7 @@ def main():
             corrected = io.imread(os.path.join(result_path,imgfile))
 
     #       #reference image
-            imgname = imgfile.split('.png')[0]
+            imgname = imgfile.split('.')[0]
             # refdir = imgname+'.png'
             reference = io.imread(os.path.join(reference_path,reffile))
 
@@ -244,6 +244,7 @@ def main():
             
             series = pd.Series({"imgname":imgname,"psnr":psnr,"ssim":ssim,"uiqm":uiqm,"uciqe":uciqe  })
             serieslist.append(series)
+          
             sumpsnr += psnr
             sumssim += ssim
             sumuiqm += uiqm
@@ -267,19 +268,19 @@ def main():
             N +=1
 
         
-        myDf=pd.DataFrame(serieslist)
+    myDf=pd.DataFrame(serieslist)
        
-        if sumpsnr and sumssim>0:
-            mpsnr = sumpsnr/N
-            mssim = sumssim/N
-        else:
-            mpsnr, mssim=0, 0
-        muiqm = sumuiqm/N
-        muciqe = sumuciqe/N
+    if sumpsnr and sumssim!=0:
+        mpsnr = sumpsnr/N
+        mssim = sumssim/N
+    else:
+        mpsnr, mssim=0, 0
+    muiqm = sumuiqm/N
+    muciqe = sumuciqe/N
 
-        myDf = myDf.append({"imgname":"Average:", "psnr":mpsnr,"ssim":mssim, "uiqm":muiqm,"uciqe":muciqe}, ignore_index=True)
+    myDf = myDf.append({"imgname":"Average:", "psnr":mpsnr,"ssim":mssim, "uiqm":muiqm,"uciqe":muciqe}, ignore_index=True)
 
-        myDf.to_csv(os.path.join(sys.path[0],'metrics.csv'))
+    myDf.to_csv(os.path.join(sys.path[0],'metrics.csv'))
         
         
 
