@@ -1,13 +1,13 @@
-##UNDERWATER IMAGE CORRECTION
+# UNDERWATER IMAGE CORRECTION
 
 [![Original GAN SEATHRU](https://img.youtube.com/vi/jmMjNaARCiE/0.jpg)](https://youtu.be/jmMjNaARCiE)
 
 
 ![Method comparison](https://github.com/khleeloo/uwh_project/blob/master/Comparison.png?raw=true "Method comparison")
 
-Parametric methods:
+## Parametric methods:
 
-Sea-thru
+### Sea-thru
 
 Data preprocessing  
 
@@ -30,17 +30,17 @@ The baseline images and depth estimations come from http://csms.haifa.ac.il/prof
 
 
 
-SQUID
+### SQUID
 
 
-Deep Learning Methods:
+## Deep Learning Methods:
 
-GAN Model
+### GAN Model
 
 - Utilize out of the shelf pix2pix model. Treating the image enhancement problem as a style transfer. Training dataset in form of aligned input and ground truth data. 
 
 
-Diffusion Model
+### Diffusion Model
 
 - Utilize the out of the shelf Palette model for the translation. We modifed the gray-to-color generation setting of the original Palette to adapt to our task.
 
