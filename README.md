@@ -16,8 +16,7 @@ The underwater image correction has both commercial and artistic use. Both param
 
 ### Sea-thru
 
-Data preprocessing  
-
+- Use a raw image and a depth map as input to remove water.
 
 The original sea-thru code from https://github.com/hainh/sea-thru
 
@@ -37,6 +36,8 @@ The baseline images and depth estimations come from http://csms.haifa.ac.il/prof
 
 
 ### SQUID
+
+- To generate depth maps and color restored images
 
 The original sea-thru code from https://github.com/danaberman/underwater-hl
 
