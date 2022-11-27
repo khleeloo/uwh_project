@@ -21,6 +21,7 @@ Data preprocessing
 
 The original sea-thru code from https://github.com/hainh/sea-thru
 
+``
 @article{seathru,
 author = {Akkaynak, Derya and Treibitz, Tali},
 year = {2019},
@@ -28,17 +29,27 @@ month = {04},
 title = {Sea-thru: A Method For Removing Water From Underwater Images},
 journal = {Proceedings / CVPR, IEEE Computer Society Conference on Computer Vision and Pattern Recognition. IEEE Computer Society Conference on Computer Vision and Pattern Recognition}
 }
+``
 
 The baseline images and depth estimations come from http://csms.haifa.ac.il/profiles/tTreibitz/datasets/sea_thru/index.html
 
 
 
 
-
-
-
 ### SQUID
 
+The original sea-thru code from https://github.com/danaberman/underwater-hl
+
+``
+@inproceedings{UnderwaterHL,
+title={Diving into Haze-Lines: Color Restoration of Underwater Images},
+author={Berman, D. and Treibitz, T. and Avidan, S.},
+booktitle={Proceedings of the British Machine Vision Conference},
+publisher = {BMVA Press}, year={2017}, }
+``
+
+
+The dataset is come from http://csms.haifa.ac.il/profiles/tTreibitz/datasets/ambient_forwardlooking/index.html
 
 ## Deep Learning Methods:
 
@@ -47,12 +58,13 @@ The baseline images and depth estimations come from http://csms.haifa.ac.il/prof
 - Utilize out of the shelf **pix2pix** model. Treating the image enhancement problem as a style transfer. Training dataset in form of aligned input and ground truth data. 
 - The link to the original model https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 
+``
 @INPROCEEDINGS{8100115,
   author={Isola, Phillip and Zhu, Jun-Yan and Zhou, Tinghui and Efros, Alexei A.},
   booktitle={2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
   title={Image-to-Image Translation with Conditional Adversarial Networks}, 
   year={2017},pages={5967-5976},doi={10.1109/CVPR.2017.632}}
-
+``
 
 
 ### Diffusion Model
