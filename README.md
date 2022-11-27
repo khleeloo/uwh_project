@@ -84,6 +84,9 @@ The dataset is come from http://csms.haifa.ac.il/profiles/tTreibitz/datasets/amb
 
 ## Results
 
+**Evaluation**: Evaluation code evaluate.py available in Metrics file based on https://github.com/xueleichen/PSNR-SSIM-UCIQE-UIQM-Python , available with preprocess.py for image preprocessing (in case of PSNR and SSIM images have to be resized to the same size and with the same number of channels)
+
+Quantitative comparison of the different model performance.
 
 ![Results](https://github.com/khleeloo/uwh_project/blob/master/results.png?raw=true "Results")
 
