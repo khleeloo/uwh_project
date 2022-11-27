@@ -3,6 +3,7 @@
 
 The underwater image correction has both commercial and artistic use. Both parametric and end-to-end models are used to enhance the vision. We compare most successful parametric methods with state-of-the-art end-to-end GAN models, and discover that depth information is crucial for successful denoising strategies. We also explore performance of a new diffusion model on this task.
 
+**Watch this**
 [![Original GAN SEATHRU](https://img.youtube.com/vi/jmMjNaARCiE/0.jpg)](https://youtu.be/jmMjNaARCiE  "Original GAN SEATHRU")
 
 [![Original GAN SEATHRU](https://img.youtube.com/vi/BBAWEzrvduE/0.jpg)](https://youtu.be/BBAWEzrvduE  "Original GAN SEATHRU")
@@ -42,7 +43,7 @@ The baseline images and depth estimations come from http://csms.haifa.ac.il/prof
 
 ### GAN Model
 
-- Utilize out of the shelf pix2pix model. Treating the image enhancement problem as a style transfer. Training dataset in form of aligned input and ground truth data. 
+- Utilize out of the shelf **pix2pix** model. Treating the image enhancement problem as a style transfer. Training dataset in form of aligned input and ground truth data. 
 - The link to the original model https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 
 @INPROCEEDINGS{8100115,
