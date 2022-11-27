@@ -72,32 +72,32 @@ Qualitative comparison between original images and the outputs returned by deep 
 
 1. GAN based, no depthmap required   
 
-*UGAN (Underwater GAN)*
+**UGAN (Underwater GAN)**
 Repo: https://github.com/cameronfabbri/Underwater-Color-Correction
     Dataset: https://irvlab.cs.umn.edu/resources
     
 
-*Adaptive Weighted Multi-Discriminator CycleGAN for Underwater Image Enhancement*
+**Adaptive Weighted Multi-Discriminator CycleGAN for Underwater Image Enhancement**
 Paper: https://www.mdpi.com/2077-1312/7/7/200
 
 Use CycleGAN method for unsupervised image color correction. 
 Dataset is basically just unpaired sets of clean & dirty underwater images.
 NO Depth map required
 
-*Underwater-GAN: Underwater Image Restoration via Conditional Generative Adversarial Network*
+**Underwater-GAN: Underwater Image Restoration via Conditional Generative Adversarial Network**
 Paper: https://link.springer.com/chapter/10.1007/978-3-030-05792-3_7
 
  Synthesize the underwater turbid images by color manipulation of on-air-taken images
 
 2. Depth-map involved 
 
-WaterGAN: Unsupervised Generative Network to Enable Real-Time Color Correction of Monocular Underwater Images
+**WaterGAN: Unsupervised Generative Network to Enable Real-Time Color Correction of Monocular Underwater Images**
 
 Paper: https://ieeexplore.ieee.org/abstract/document/7995024
 Repo & Dataset: https://github.com/kskin/WaterGAN)
 
 
-*All-In-One Underwater Image Enhancement using Domain-Adversarial Learning*
+**All-In-One Underwater Image Enhancement using Domain-Adversarial Learning**
 
 Paper:http://openaccess.thecvf.com/content_CVPRW_2019/papers/UG2+%20Prize%20Challenge/Uplavikar_All-in-One_Underwater_Image_Enhancement_Using_Domain-Adversarial_Learning_CVPRW_2019_paper.pdf
 Repo:https://github.com/TAMU-VITA/All-In-One-Underwater-Image-Enhancement-using-Domain-Adversarial-Learning
