@@ -39,6 +39,14 @@ The baseline images and depth estimations come from http://csms.haifa.ac.il/prof
 
 - Utilize out of the shelf pix2pix model. Treating the image enhancement problem as a style transfer. Training dataset in form of aligned input and ground truth data. 
 
+@INPROCEEDINGS{8100115,
+  author={Isola, Phillip and Zhu, Jun-Yan and Zhou, Tinghui and Efros, Alexei A.},
+  booktitle={2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  title={Image-to-Image Translation with Conditional Adversarial Networks}, 
+  year={2017},pages={5967-5976},doi={10.1109/CVPR.2017.632}}
+
+
+
 
 ### Diffusion Model
 
