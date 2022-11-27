@@ -56,6 +56,9 @@ The baseline images and depth estimations come from http://csms.haifa.ac.il/prof
 
 - Utilize the out of the shelf Palette model for the translation. We modifed the gray-to-color generation setting of the original Palette to adapt to our task.
 
+## Datasets
+The baseline images and depth estimations for Sea-thru come from http://csms.haifa.ac.il/profiles/tTreibitz/datasets/sea_thru/index.html
+
 
 ## Results
 
