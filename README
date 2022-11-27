@@ -1,13 +1,6 @@
 UNDERWATER IMAGE CORRECTION
 
-
-<div id="header" align="center">
-  <img src="https://www.youtube.com/watch?v=SJVx1dsXTSc" width="200"/>
-</div>
-
-
-[!UWH Showcase](http://img.youtube.com/vi/SJVx1dsXTSc/0.jpg)](http://www.youtube.com/watch?v=SJVx1dsXTSc "UWH Showcase")
-
+[![Original GAN SEATHRU](https://img.youtube.com/vi/jmMjNaARCiE/0.jpg)](https://youtu.be/jmMjNaARCiE)
 
 Parametric methods:
 
@@ -39,7 +32,9 @@ SQUID
 
 Deep Learning Methods:
 
-Pix2Pix
+GAN Model
+
+- Utilize out of the shelf pix2pix model. Treating the image enhancement problem as a style transfer. Training dataset in form of aligned input and ground truth data. 
 
 
 Diffusion Model
