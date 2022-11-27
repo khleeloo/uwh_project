@@ -43,6 +43,7 @@ The baseline images and depth estimations come from http://csms.haifa.ac.il/prof
 ### GAN Model
 
 - Utilize out of the shelf pix2pix model. Treating the image enhancement problem as a style transfer. Training dataset in form of aligned input and ground truth data. 
+- The link to the original model https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
 
 @INPROCEEDINGS{8100115,
   author={Isola, Phillip and Zhu, Jun-Yan and Zhou, Tinghui and Efros, Alexei A.},
@@ -55,15 +56,56 @@ The baseline images and depth estimations come from http://csms.haifa.ac.il/prof
 ### Diffusion Model
 
 - Utilize the out of the shelf Palette model for the translation. We modifed the gray-to-color generation setting of the original Palette to adapt to our task.
-- The link to the original model https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+
 
 ## Datasets
-The baseline images and depth estimations for Sea-thru come from http://csms.haifa.ac.il/profiles/tTreibitz/datasets/sea_thru/index.html
-
+*Sea-thru* The baseline images and depth estimations for Sea-thru come from http://csms.haifa.ac.il/profiles/tTreibitz/datasets/sea_thru/index.html
+*EUVP Dataset* The EUVP (Enhancing Underwater Visual Perception) dataset contains separate sets of paired and unpaired image samples of poor and good perceptual quality to facilitate supervised training of underwater image enhancement models. https://irvlab.cs.umn.edu/resources/euvp-dataset
 
 ## Results
 
 Qualitative comparison between original images and the outputs returned by deep models: GAN and Diffusion as well as parametric Sea-thru and SQUID.
 
 ![Method comparison](https://github.com/khleeloo/uwh_project/blob/master/Comparison.png?raw=true "Method comparison")
+
+## Other Repos and Methods
+
+GAN based, no depthmap required
+
+UGAN (Underwater GAN)
+Repo: https://github.com/cameronfabbri/Underwater-Color-Correction
+    Dataset: https://irvlab.cs.umn.edu/resources
+    
+
+Adaptive Weighted Multi-Discriminator CycleGAN for Underwater Image Enhancement
+Paper: https://www.mdpi.com/2077-1312/7/7/200
+
+Use CycleGAN method for unsupervised image color correction. 
+Dataset is basically just unpaired sets of clean & dirty underwater images.
+NO Depth map required
+
+Underwater-GAN: Underwater Image Restoration via Conditional Generative Adversarial Network
+Paper: https://link.springer.com/chapter/10.1007/978-3-030-05792-3_7
+
+Basic, Synthesize the underwater turbid images by color manipulation of on-air-taken images
+
+
+Depth-map involved 
+
+WaterGAN: Unsupervised Generative Network to Enable Real-Time Color Correction of Monocular Underwater Images
+
+Paper: https://ieeexplore.ieee.org/abstract/document/7995024
+Repo & Dataset: https://github.com/kskin/WaterGAN)
+
+
+All-In-One Underwater Image Enhancement using Domain-Adversarial Learning
+
+Paper:http://openaccess.thecvf.com/content_CVPRW_2019/papers/UG2+%20Prize%20Challenge/Uplavikar_All-in-One_Underwater_Image_Enhancement_Using_Domain-Adversarial_Learning_CVPRW_2019_paper.pdf
+Repo:https://github.com/TAMU-VITA/All-In-One-Underwater-Image-Enhancement-using-Domain-Adversarial-Learning
+
+
+“Create” Paired dataset by distorting the original on-air-taken photos using the depth-map of the air-taken images. 
+
+
+
 
