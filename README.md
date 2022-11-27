@@ -1,6 +1,8 @@
 # UNDERWATER IMAGE CORRECTION
 
-[![Original GAN SEATHRU](https://img.youtube.com/vi/jmMjNaARCiE/0.jpg)](https://youtu.be/jmMjNaARCiE)
+[![Original GAN SEATHRU](https://img.youtube.com/vi/jmMjNaARCiE/0.jpg)](https://youtu.be/jmMjNaARCiE  "Original GAN SEATHRU")
+
+[![Original GAN SEATHRU](https://img.youtube.com/vi/BBAWEzrvduE /0.jpg)](https://youtu.be/BBAWEzrvduE  "Original GAN SEATHRU")
 
 
 ![Method comparison](https://github.com/khleeloo/uwh_project/blob/master/Comparison.png?raw=true "Method comparison")
