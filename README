@@ -5,11 +5,6 @@ UNDERWATER IMAGE CORRECTION
   <img src="https://www.youtube.com/watch?v=SJVx1dsXTSc" width="200"/>
 </div>
 
-[![Original GAN Sea-thru](https://img.youtube.com/vi/jmMjNaARCiE/0.jpg)](https://www.youtube.com/watch?v=jmMjNaARCiE)
-
-
-
-<iframe width="1280" height="327" src="https://www.youtube.com/embed/jmMjNaARCiE" title="Underwater Hockey Video 2_" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Parametric methods:
 
@@ -46,6 +41,6 @@ Pix2Pix
 
 Diffusion Model
 
-
+- Utilize the out of the shelf Palette model for the translation. We modifed the gray-to-color generation setting of the original Palette to adapt to our task.
 
 
