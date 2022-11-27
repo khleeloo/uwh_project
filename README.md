@@ -62,5 +62,7 @@ The baseline images and depth estimations for Sea-thru come from http://csms.hai
 
 ## Results
 
+Qualitative comparison between original images and the outputs returned by deep models: GAN and Diffusion as well as parametric Sea-thru and SQUID.
+
 ![Method comparison](https://github.com/khleeloo/uwh_project/blob/master/Comparison.png?raw=true "Method comparison")
 
