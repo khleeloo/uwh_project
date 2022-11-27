@@ -8,7 +8,7 @@ The underwater image correction has both commercial and artistic use. Both param
 [![Original GAN SEATHRU](https://img.youtube.com/vi/BBAWEzrvduE/0.jpg)](https://youtu.be/BBAWEzrvduE  "Original GAN SEATHRU")
 
 
-![Method comparison](https://github.com/khleeloo/uwh_project/blob/master/Comparison.png?raw=true "Method comparison")
+
 
 ## Parametric methods:
 
@@ -52,9 +52,12 @@ The baseline images and depth estimations come from http://csms.haifa.ac.il/prof
 
 
 
-
 ### Diffusion Model
 
 - Utilize the out of the shelf Palette model for the translation. We modifed the gray-to-color generation setting of the original Palette to adapt to our task.
 
+
+## Results
+
+![Method comparison](https://github.com/khleeloo/uwh_project/blob/master/Comparison.png?raw=true "Method comparison")
 
