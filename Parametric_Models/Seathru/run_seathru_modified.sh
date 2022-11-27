@@ -1,1 +1,0 @@
-python3  seathru_modified.py
